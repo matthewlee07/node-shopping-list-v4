@@ -38,6 +38,7 @@ const ShoppingList = {
   update: function(updatedItem) {
     console.log(`Updating shopping list item \`${updatedItem.id}\``);
     const {id} = updatedItem;
+    // const id = updatedItem.id
     if (!(id in this.items)) {
       throw StorageException(
         `Can't update item \`${id}\` because doesn't exist.`)
